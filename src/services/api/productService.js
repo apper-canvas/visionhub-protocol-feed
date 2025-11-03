@@ -9,7 +9,7 @@ class ProductService {
 
   transformProduct(rawProduct) {
     return {
-      Id: rawProduct.Id_c,
+Id: rawProduct.Id,
       brand: rawProduct.brand_c,
 model: rawProduct.model_c,
       category: rawProduct.category_c,
