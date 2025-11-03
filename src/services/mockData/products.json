@@ -1,0 +1,315 @@
+[
+  {
+    "Id": 1,
+    "brand": "Ray-Ban",
+    "model": "Aviator Classic",
+    "category": "Sunglasses",
+    "price": 154,
+    "discountPrice": null,
+    "images": [
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&q=80",
+      "https://images.unsplash.com/photo-1508296695146-257a814070b4?w=800&q=80",
+      "https://images.unsplash.com/photo-1556306535-0f09a537f0a3?w=800&q=80"
+    ],
+    "frameShape": "Aviator",
+    "frameMaterial": "Metal",
+    "frameColor": "Gold",
+    "gender": "Unisex",
+    "size": {
+      "lensWidth": 58,
+      "bridgeWidth": 14,
+      "templeLength": 135
+    },
+    "description": "The original pilot sunglasses. This Ray-Ban style has been an icon of American fashion for over 75 years.",
+    "features": ["UV Protection", "Polarized Lenses", "Scratch Resistant", "Classic Design"],
+    "inStock": true,
+    "rating": 4.7,
+    "reviewCount": 2847
+  },
+  {
+    "Id": 2,
+    "brand": "Oakley",
+    "model": "Holbrook",
+    "category": "Sunglasses",
+    "price": 178,
+    "discountPrice": 142,
+    "images": [
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&q=80",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&q=80"
+    ],
+    "frameShape": "Square",
+    "frameMaterial": "Plastic",
+    "frameColor": "Black",
+    "gender": "Men",
+    "size": {
+      "lensWidth": 55,
+      "bridgeWidth": 18,
+      "templeLength": 137
+    },
+    "description": "A timeless, classic design fused with modern Oakley technology. Perfect for active lifestyles.",
+    "features": ["Prizm Lenses", "Impact Resistant", "Lightweight", "100% UV Protection"],
+    "inStock": true,
+    "rating": 4.5,
+    "reviewCount": 1632
+  },
+  {
+    "Id": 3,
+    "brand": "Warby Parker",
+    "model": "Percey",
+    "category": "Eyeglasses",
+    "price": 95,
+    "discountPrice": null,
+    "images": [
+      "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=800&q=80",
+      "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=800&q=80"
+    ],
+    "frameShape": "Round",
+    "frameMaterial": "Acetate",
+    "frameColor": "Tortoise",
+    "gender": "Unisex",
+    "size": {
+      "lensWidth": 49,
+      "bridgeWidth": 20,
+      "templeLength": 145
+    },
+    "description": "Inspired by 1960s intellectuals and artists, these round frames add a sophisticated touch to any look.",
+    "features": ["Blue Light Filtering", "Anti-Reflective Coating", "Flexible Hinges", "Prescription Ready"],
+    "inStock": true,
+    "rating": 4.6,
+    "reviewCount": 894
+  },
+  {
+    "Id": 4,
+    "brand": "Tom Ford",
+    "model": "Madison",
+    "category": "Sunglasses",
+    "price": 425,
+    "discountPrice": null,
+    "images": [
+      "https://images.unsplash.com/photo-1509695507497-903c140c43b0?w=800&q=80",
+      "https://images.unsplash.com/photo-1559087867-ce4c91325525?w=800&q=80"
+    ],
+    "frameShape": "Cat Eye",
+    "frameMaterial": "Acetate",
+    "frameColor": "Black",
+    "gender": "Women",
+    "size": {
+      "lensWidth": 54,
+      "bridgeWidth": 16,
+      "templeLength": 140
+    },
+    "description": "Glamorous cat-eye sunglasses that embody Tom Ford's signature luxury aesthetic with sophisticated detailing.",
+    "features": ["Premium Lenses", "Luxury Finish", "Designer Case", "100% UV Protection"],
+    "inStock": true,
+    "rating": 4.8,
+    "reviewCount": 456
+  },
+  {
+    "Id": 5,
+    "brand": "Persol",
+    "model": "PO3019S",
+    "category": "Sunglasses",
+    "price": 298,
+    "discountPrice": 268,
+    "images": [
+      "https://images.unsplash.com/photo-1577803645773-f96470509666?w=800&q=80",
+      "https://images.unsplash.com/photo-1506629905607-45c9f1c3ccc7?w=800&q=80"
+    ],
+    "frameShape": "Pilot",
+    "frameMaterial": "Metal",
+    "frameColor": "Silver",
+    "gender": "Men",
+    "size": {
+      "lensWidth": 58,
+      "bridgeWidth": 14,
+      "templeLength": 140
+    },
+    "description": "Italian craftsmanship meets timeless design in these elegant pilot sunglasses with distinctive temple details.",
+    "features": ["Crystal Lenses", "Adjustable Nose Pads", "Italian Made", "Premium Materials"],
+    "inStock": true,
+    "rating": 4.7,
+    "reviewCount": 723
+  },
+  {
+    "Id": 6,
+    "brand": "Oliver Peoples",
+    "model": "Gregory Peck",
+    "category": "Eyeglasses",
+    "price": 385,
+    "discountPrice": null,
+    "images": [
+      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80",
+      "https://images.unsplash.com/photo-1614715838608-dd527c46231d?w=800&q=80"
+    ],
+    "frameShape": "Round",
+    "frameMaterial": "Acetate",
+    "frameColor": "Brown",
+    "gender": "Men",
+    "size": {
+      "lensWidth": 47,
+      "bridgeWidth": 24,
+      "templeLength": 150
+    },
+    "description": "Vintage-inspired round frames named after the legendary actor, crafted with premium acetate and attention to detail.",
+    "features": ["Handmade", "Premium Acetate", "Vintage Design", "Adjustable Nose Pads"],
+    "inStock": false,
+    "rating": 4.9,
+    "reviewCount": 312
+  },
+  {
+    "Id": 7,
+    "brand": "Zenni",
+    "model": "Classic Square",
+    "category": "Eyeglasses",
+    "price": 39,
+    "discountPrice": 29,
+    "images": [
+      "https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=800&q=80",
+      "https://images.unsplash.com/photo-1562084073-035b9a5a6e5f?w=800&q=80"
+    ],
+    "frameShape": "Square",
+    "frameMaterial": "Plastic",
+    "frameColor": "Blue",
+    "gender": "Unisex",
+    "size": {
+      "lensWidth": 52,
+      "bridgeWidth": 16,
+      "templeLength": 140
+    },
+    "description": "Affordable, stylish square frames perfect for everyday wear with a contemporary design and comfortable fit.",
+    "features": ["Lightweight", "Durable", "Multiple Colors", "Prescription Ready"],
+    "inStock": true,
+    "rating": 4.2,
+    "reviewCount": 1567
+  },
+  {
+    "Id": 8,
+    "brand": "Maui Jim",
+    "model": "Peahi",
+    "category": "Sunglasses",
+    "price": 289,
+    "discountPrice": null,
+    "images": [
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&q=80",
+      "https://images.unsplash.com/photo-1580056050681-4d65ecee8507?w=800&q=80"
+    ],
+    "frameShape": "Wrap",
+    "frameMaterial": "Grilamid",
+    "frameColor": "Tortoise",
+    "gender": "Unisex",
+    "size": {
+      "lensWidth": 67,
+      "bridgeWidth": 15,
+      "templeLength": 130
+    },
+    "description": "Performance sunglasses designed for water sports with polarized lenses and wraparound protection.",
+    "features": ["Polarized Plus2", "Water Sports", "Impact Resistant", "Floating Frame"],
+    "inStock": true,
+    "rating": 4.6,
+    "reviewCount": 982
+  },
+  {
+    "Id": 9,
+    "brand": "Coach",
+    "model": "Signature C",
+    "category": "Sunglasses",
+    "price": 168,
+    "discountPrice": 134,
+    "images": [
+      "https://images.unsplash.com/photo-1559087867-ce4c91325525?w=800&q=80",
+      "https://images.unsplash.com/photo-1506629905607-45c9f1c3ccc7?w=800&q=80"
+    ],
+    "frameShape": "Butterfly",
+    "frameMaterial": "Metal",
+    "frameColor": "Rose Gold",
+    "gender": "Women",
+    "size": {
+      "lensWidth": 58,
+      "bridgeWidth": 16,
+      "templeLength": 135
+    },
+    "description": "Elegant butterfly frames featuring Coach's signature detailing with sophisticated temple design and luxury finish.",
+    "features": ["Signature Design", "Gradient Lenses", "Luxury Case", "UV Protection"],
+    "inStock": true,
+    "rating": 4.4,
+    "reviewCount": 678
+  },
+  {
+    "Id": 10,
+    "brand": "Prada",
+    "model": "Cinema",
+    "category": "Sunglasses",
+    "price": 320,
+    "discountPrice": null,
+    "images": [
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&q=80",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&q=80"
+    ],
+    "frameShape": "Square",
+    "frameMaterial": "Acetate",
+    "frameColor": "Havana",
+    "gender": "Women",
+    "size": {
+      "lensWidth": 54,
+      "bridgeWidth": 17,
+      "templeLength": 140
+    },
+    "description": "Bold square frames inspired by cinema culture with Prada's distinctive logo and premium Italian craftsmanship.",
+    "features": ["Italian Made", "Logo Detail", "Premium Acetate", "Designer Case"],
+    "inStock": true,
+    "rating": 4.7,
+    "reviewCount": 389
+  },
+  {
+    "Id": 11,
+    "brand": "Warby Parker",
+    "model": "Clark",
+    "category": "Eyeglasses",
+    "price": 95,
+    "discountPrice": null,
+    "images": [
+      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80",
+      "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=800&q=80"
+    ],
+    "frameShape": "Square",
+    "frameMaterial": "Acetate",
+    "frameColor": "Whiskey Tortoise",
+    "gender": "Men",
+    "size": {
+      "lensWidth": 51,
+      "bridgeWidth": 20,
+      "templeLength": 145
+    },
+    "description": "Classic square frames with a modern twist, featuring premium acetate construction and versatile styling.",
+    "features": ["Blue Light Filtering", "Anti-Reflective", "Home Try-On", "Prescription Ready"],
+    "inStock": true,
+    "rating": 4.5,
+    "reviewCount": 1245
+  },
+  {
+    "Id": 12,
+    "brand": "Gucci",
+    "model": "GG Supreme",
+    "category": "Sunglasses",
+    "price": 450,
+    "discountPrice": null,
+    "images": [
+      "https://images.unsplash.com/photo-1509695507497-903c140c43b0?w=800&q=80",
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&q=80"
+    ],
+    "frameShape": "Oversized",
+    "frameMaterial": "Acetate",
+    "frameColor": "Black",
+    "gender": "Women",
+    "size": {
+      "lensWidth": 60,
+      "bridgeWidth": 17,
+      "templeLength": 140
+    },
+    "description": "Oversized glamour meets Italian luxury in these statement sunglasses featuring Gucci's iconic design elements.",
+    "features": ["Luxury Design", "Oversized Fit", "Italian Crafted", "Premium Lenses"],
+    "inStock": true,
+    "rating": 4.8,
+    "reviewCount": 267
+  }
+]

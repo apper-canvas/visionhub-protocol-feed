@@ -1,0 +1,73 @@
+@import 'react-toastify/dist/ReactToastify.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom toast styling */
+.Toastify__toast {
+  @apply text-sm font-medium rounded-lg;
+  min-height: 48px;
+}
+
+.Toastify__toast--success {
+  @apply bg-white border border-success text-primary;
+}
+
+.Toastify__toast--error {
+  @apply bg-white border border-error text-primary;
+}
+
+.Toastify__toast--warning {
+  @apply bg-white border border-warning text-primary;
+}
+
+.Toastify__toast--info {
+  @apply bg-white border border-info text-primary;
+}
+
+.Toastify__progress-bar {
+  @apply bg-accent;
+}
+
+.Toastify__close-button {
+  @apply text-secondary;
+}
+
+/* Global scroll styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
+
+/* Custom animations */
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 1.5s infinite linear;
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 0px,
+    #e0e0e0 40px,
+    #f0f0f0 80px
+  );
+  background-size: 200px;
+}
