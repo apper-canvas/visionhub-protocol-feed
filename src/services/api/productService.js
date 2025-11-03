@@ -11,7 +11,7 @@ class ProductService {
     return {
       Id: rawProduct.Id_c,
       brand: rawProduct.brand_c,
-      model: rawProduct.model_c,
+model: rawProduct.model_c,
       category: rawProduct.category_c,
       price: rawProduct.price_c,
       discountPrice: rawProduct.discountPrice_c,
