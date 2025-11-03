@@ -32,7 +32,7 @@ const SearchBar = ({ className = "" }) => {
       setLoading(true);
       debounceRef.current = setTimeout(async () => {
         try {
-          const searchResults = await productService.search(query);
+const searchResults = await productService.search(query);
           setResults(searchResults);
           setIsOpen(true);
         } catch (error) {

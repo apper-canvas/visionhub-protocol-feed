@@ -1,18 +1,19 @@
-import React, { useState, useEffect } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
-import ApperIcon from "@/components/ApperIcon";
-import SearchBar from "@/components/molecules/SearchBar";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 import cartService from "@/services/api/cartService";
+import { useAuth } from "@/hooks/useAuth";
+import ApperIcon from "@/components/ApperIcon";
+import Button from "@/components/atoms/Button";
+import SearchBar from "@/components/molecules/SearchBar";
 
 const Header = () => {
   const [cartCount, setCartCount] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-
-  useEffect(() => {
-    loadCartCount();
-  }, []);
+  const { logout } = useAuth();
+  const { isAuthenticated, user } = useSelector(state => state.user || {});
 
   const loadCartCount = async () => {
     try {
@@ -20,13 +21,27 @@ const Header = () => {
       setCartCount(count);
     } catch (error) {
       console.error("Error loading cart count:", error);
+      setCartCount(0);
     }
   };
+
+  useEffect(() => {
+    loadCartCount();
+  }, []);
 
   // Update cart count when location changes (for when items are added)
   useEffect(() => {
     loadCartCount();
   }, [location]);
+
+  const handleLogout = async () => {
+    try {
+      await logout();
+      navigate('/');
+    } catch (error) {
+      console.error("Error logging out:", error);
+    }
+  };
 
   const navigationLinks = [
     { label: "Home", path: "/" },
@@ -89,12 +104,16 @@ const Header = () => {
             <SearchBar />
           </div>
 
-          {/* Cart & Menu Icons */}
+          {/* Right Side Actions */}
           <div className="flex items-center space-x-4">
-            {/* Mobile Search Toggle */}
-            <button className="lg:hidden p-2 text-secondary hover:text-accent rounded-lg hover:bg-accent/5 transition-colors duration-200">
-              <ApperIcon name="Search" size={20} />
-            </button>
+            {/* Virtual Try-On - Mobile Hidden */}
+            <Link
+              to="/virtual-try-on"
+              className="hidden xl:flex items-center space-x-2 px-4 py-2 rounded-lg bg-gradient-to-r from-accent to-orange-600 text-white hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5"
+            >
+              <ApperIcon name="Sparkles" size={16} />
+              <span className="font-medium">Virtual Try-On</span>
+            </Link>
 
             {/* Cart Icon */}
             <button
@@ -108,6 +127,35 @@ const Header = () => {
                 </span>
               )}
             </button>
+
+            {/* Authentication */}
+            {isAuthenticated ? (
+              <div className="hidden sm:flex items-center space-x-3">
+                <span className="text-sm text-secondary">
+                  Welcome, {user?.firstName || 'User'}
+                </span>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handleLogout}
+                >
+                  Logout
+                </Button>
+              </div>
+            ) : (
+              <div className="hidden sm:flex items-center space-x-2">
+                <Link to="/login">
+                  <Button variant="ghost" size="sm">
+                    Login
+                  </Button>
+                </Link>
+                <Link to="/signup">
+                  <Button variant="primary" size="sm">
+                    Sign Up
+                  </Button>
+                </Link>
+              </div>
+            )}
 
             {/* Mobile Menu Toggle */}
             <button
@@ -143,6 +191,38 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
+
+            {/* Mobile Authentication */}
+            <div className="pt-4 border-t border-gray-100">
+              {isAuthenticated ? (
+                <div className="space-y-2">
+                  <div className="px-4 py-2 text-sm text-secondary">
+                    Welcome, {user?.firstName || 'User'}
+                  </div>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={handleLogout}
+                    className="w-full"
+                  >
+                    Logout
+                  </Button>
+                </div>
+              ) : (
+                <div className="space-y-2">
+                  <Link to="/login" onClick={() => setIsMenuOpen(false)}>
+                    <Button variant="ghost" size="sm" className="w-full">
+                      Login
+                    </Button>
+                  </Link>
+                  <Link to="/signup" onClick={() => setIsMenuOpen(false)}>
+                    <Button variant="primary" size="sm" className="w-full">
+                      Sign Up
+                    </Button>
+                  </Link>
+                </div>
+              )}
+            </div>
           </nav>
         </div>
       )}

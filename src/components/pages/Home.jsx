@@ -36,9 +36,16 @@ const Home = () => {
   }, [searchParams]);
 
   // Load filter options
-  useEffect(() => {
-    const options = productService.getFilterOptions();
-    setFilterOptions(options);
+useEffect(() => {
+    const loadFilterOptions = async () => {
+      try {
+        const options = await productService.getFilterOptions();
+        setFilterOptions(options);
+      } catch (error) {
+        console.error("Error loading filter options:", error);
+      }
+    };
+    loadFilterOptions();
   }, []);
 
   const updateFilters = (newFilters) => {
